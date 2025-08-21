@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> | حماية طلاء السيارات PPF في جدة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        
+        /* Mobile Contact Buttons */
+        .mobile-contact-btn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            z-index: 100;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .mobile-contact-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .mobile-call-btn {
+            right: 20px;
+            background: #f97316;
+            color: white;
+        }
+        
+        .mobile-whatsapp-btn {
+            right: 90px;
+            background: #25D366;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-contact-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        body.dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+        
+        body.dark-mode .bg-white {
+            background-color: #2d3748;
+        }
+        
+        body.dark-mode .bg-gray-50 {
+            background-color: #2d3748;
+        }
+        
+        body.dark-mode .bg-orange-50 {
+            background-color: #4a2c15;
+        }
+        
+        body.dark-mode .text-gray-600,
+        body.dark-mode .text-gray-800 {
+            color: #e2e8f0;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            background-color: #fff7ed;
+        }
+        
+        body.dark-mode .faq-item:hover {
+            background-color: #3c2a1a;
+        }
+        
+        .cta-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        .auto-text {
+            color: #dc2626;
+            font-weight: 900;
+        }
+        
+        .auto-text-red {
+            color: #dc2626;
+            font-weight: 700;
+        }
+        
+        .tek-text {
+            color: #000000;
+            font-weight: 700;
+        }
+        
+        body.dark-mode .tek-text {
+            color: #ffffff;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+            }
+        }
+        
+        /* New SefrQays-inspired styles */
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            right: 0;
+            width: 50%;
+            height: 4px;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            border-radius: 2px;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark-mode-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #2d3748;
+            color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .dark-mode-toggle:hover {
+            transform: scale(1.1);
+        }
+        
+        body.dark-mode .dark-mode-toggle {
+            background: #e2e8f0;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Dark Mode Toggle Button -->
+    <div class="dark-mode-toggle" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="nav-container py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold"><span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span></div>
+            <div class="hidden md:flex space-x-6 space-x-reverse">
+                <a href="#why" class="hover:text-orange-600 transition-colors">لماذا PPF؟</a>
+                <a href="#benefits" class="hover:text-orange-600 transition-colors">المزايا</a>
+                <a href="#why-us" class="hover:text-orange-600 transition-colors">لماذا نحن؟</a>
+                <a href="#faq" class="hover:text-orange-600 transition-colors">الأسئلة الشائعة</a>
+            </div>
+            <a href="tel:0504631317" class="btn-primary">
+                <i class="fas fa-phone ml-2"></i> 0504631317
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="nav-container flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">احمي سيارتك مع <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> – حماية تدوم ومظهر فاخر  🚘✨</h1>
+                <p class="text-xl mb-8">تركيب PPF – Paint Protection Film لحماية الطلاء من الخدوش والأتربة وأشعة الشمس.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#offer" class="cta-pulse bg-white text-orange-600 font-bold px-8 py-3 rounded-full text-center hover:bg-gray-100 transition">
+                        احصل على خصم 50% الآن
+                    </a>
+                    <a href="https://wa.me/966504631317" class="bg-green-500 text-white font-bold px-8 py-3 rounded-full text-center hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp ml-2"></i> تواصل معنا واتساب 0504631317
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white/20 p-8 rounded-xl backdrop-blur-sm">
+                    <div class="text-center">
+                        <i class="fas fa-car text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-2">عرض خاص</h3>
+                        <p class="text-xl">خصم 50% عند الحجز الآن</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why PPF Section -->
+    <section id="why" class="py-16 bg-white">
+        <div class="nav-container">
+            <h2 class="section-title text-center mx-auto text-orange-600">أهمية PPF (Paint Protection Film)</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover feature-card bg-gray-50 p-6 rounded-xl shadow-md transition">
+                    <div class="text-orange-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">حماية من الخدوش والتآكل</h3>
+                    <p class="text-gray-600">يمنع الخدوش والتآكل ويحافظ على مظهر السيارة كالجديدة.</p>ويحمي من اشعة الشمس الضارة 
+                </div>
+                <div class="card-hover feature-card bg-gray-50 p-6 rounded-xl shadow-md transition">
+                    <div class="text-orange-500 text-4xl mb-4">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">حماية من الأتربة وأشعة الشمس</h3>
+                    <p class="text-gray-600">يحمي الطلاء من الأتربة والحصى وأشعة الشمس الضارة.</p>
+                </div>
+                <div class="card-hover feature-card bg-gray-50 p-6 rounded-xl shadow-md transition">
+                    <div class="text-orange-500 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">زيادة القيمة السوقية</h3>
+                    <p class="text-gray-600">يزيد من قيمة السيارة عند إعادة البيع.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-gray-50">
+        <div class="nav-container">
+            <h2 class="section-title text-center mx-auto text-orange-600">مزايا PPF من <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <h3 class="text-lg font-bold mb-2">حماية طويلة الأمد</h3>
+                    <p class="text-gray-600">حماية السيارة لسنوات طويلة.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <h3 class="text-lg font-bold mb-2">لمعان دائم</h3>
+                    <p class="text-gray-600">الحفاظ على لمعان الطلاء.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <h3 class="text-lg font-bold mb-2">مظهر فاخر</h3>
+                    <p class="text-gray-600">مظهر فاخر ولامع دائماً للسيارة.</p>
+                </div>
+                <div class="card-hover bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500">
+                    <h3 class="text-lg font-bold mb-2">تركيب احترافي</h3>
+                    <p class="text-gray-600">تركيب احترافي سريع وآمن.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="py-16 bg-white">
+        <div class="nav-container">
+            <h2 class="section-title text-center mx-auto text-orange-600">لماذا تختار <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span>؟</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">خبرة واسعة</h3>
+                            <p class="text-gray-600">خبرة واسعة في تركيب PPF لجميع أنواع السيارات.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">ضمان 5 سنوات</h3>
+                            <p class="text-gray-600">ضمان 5 سنوات على جودة الفيلم والتركيب.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-headset text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">خدمة عملاء مميزة</h3>
+                            <p class="text-gray-600">خدمة عملاء مباشرة عبر الاتصال أو واتساب 0504631317.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-orange-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-tag text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">أسعار تنافسية</h3>
+                            <p class="text-gray-600">أسعار تنافسية مع عرض خصم 50% خاص للحجز الآن.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="py-16 bg-orange-50">
+        <div class="nav-container text-center">
+            <h2 class="text-3xl font-bold mb-6 text-orange-600">🔥 خصم 50% عند الحجز الآن!</h2>
+            <p class="text-xl mb-8">لا تفوت الفرصة لحماية سيارتك بأفضل سعر في جدة</p>
+            <a href="https://wa.me/966504631317" class="cta-pulse inline-block btn-primary px-8 py-4 rounded-full">
+                احجز عرض الخصم 50% الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="nav-container">
+            <h2 class="section-title text-center mx-auto text-orange-600">الأسئلة الشائعة</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="card-hover faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(1)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">❓ ما هو PPF؟</h3>
+                        <i class="fas fa-chevron-down text-orange-600"></i>
+                    </div>
+                    <div id="faq-answer-1" class="hidden mt-4 text-gray-600">
+                        PPF أو Paint Protection Film هو فيلم شفاف يحمي الطلاء من الخدوش والتآكل ويحافظ على لمعان السيارة.
+                    </div>
+                </div>
+                <div class="card-hover faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(2)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">❓ كم يدوم حماية PPF؟</h3>
+                        <i class="fas fa-chevron-down text-orange-600"></i>
+                    </div>
+                    <div id="faq-answer-2" class="hidden mt-4 text-gray-600">
+                        ضمان 5 سنوات على جميع الأفلام والخدمات.
+                    </div>
+                </div>
+                <div class="card-hover faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(3)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">❓ هل يؤثر PPF على مظهر السيارة?</h3>
+                        <i class="fas fa-chevron-down text-orange-600"></i>
+                    </div>
+                    <div id="faq-answer-3" class="hidden mt-4 text-gray-600">
+                        شفاف وغير مرئي تقريبًا. يحافظ على المظهر الأصلي للسيارة.
+                    </div>
+                </div>
+                <div class="card-hover faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(4)">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-bold">❓ لماذا أختار <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> لتركيب PPF؟</h3>
+                        <i class="fas fa-chevron-down text-orange-600"></i>
+                    </div>
+                    <div id="faq-answer-4" class="hidden mt-4 text-gray-600">
+                        <ul class="list-disc pr-5 space-y-2">
+                            <li>منتجات أصلية</li>
+                            <li>تركيب احترافي في جدة لجميع أنواع السيارات</li>
+                            <li>ضمان 5 سنوات وخدمة مباشرة عبر 0504631317</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-white">
+        <div class="nav-container">
+            <h2 class="section-title text-center mx-auto text-orange-600">لماذا تحتاج سيارتك إلى PPF من <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span>؟</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <div class="card-hover bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-3 text-orange-600">حماية الطلاء من الخدوش والأتربة</h3>
+                        <p class="text-gray-600">تركيب PPF – Paint Protection Film يخلق طبقة شفافة على طلاء السيارة تحميها من الخدوش الناتجة عن الحصى والأتربة.</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-3 text-orange-600">حماية من الأشعة فوق البنفسجية</h3>
+                        <p class="text-gray-600">الأفلام الحديثة تمنع تأثر الطلاء بأشعة الشمس الضارة، فتبقى الألوان حية ولمعان الطلاء مستمر لفترة أطول.</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-3 text-orange-600">تقليل تكاليف الصيانة على المدى الطويل</h3>
+                        <p class="text-gray-600">مع PPF لن تحتاج إلى إعادة صيانة الطلاء بشكل متكرر أو إصلاح الخدوش الطفيفة، مما يوفر لك المال والوقت.</p>
+                    </div>
+                    <div class="card-hover bg-gray-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-3 text-orange-600">حماية القيمة السوقية للسيارة</h3>
+                        <p class="text-gray-600">السيارات المحمية بـ PPF تحتفظ بمظهرها كالجديدة، مما يزيد من قيمتها عند إعادة البيع.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="nav-container text-center">
+            <h2 class="section-title text-center mx-auto text-orange-600">موقعنا في جدة</h2>
+            <p class="text-xl mb-4">جدة - حي السنابل - شارع فهد بن خرينق</p>
+            <p class="text-lg mb-8">نقدم أيضًا: عوازل حرارية | نانو سيراميك | إصلاح كسور الزجاج</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="nav-container">
+            <div class="flex flex-col items-center text-center">
+                <h3 class="text-4xl font-bold mb-4"><span class="auto-text">A</span><span class="auto-text-red">UTO</span><span class="tek-text">TEK</span></h3>
+                <p class="text-gray-300 text-xl mb-6">حماية طلاء السيارات PPF في جدة</p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-phone text-orange-500 mr-2"></i>
+                        <span class="text-lg">0504631317</span>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <i class="fab fa-whatsapp text-green-400 mr-2"></i>
+                        <a href="https://wa.me/966504631317" class="hover:underline text-lg">0504631317</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> لتركيب PPF. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Contact Buttons -->
+    <a href="tel:0504631317" class="mobile-contact-btn mobile-call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://wa.me/966504631317" class="mobile-contact-btn mobile-whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Toggle FAQ answers
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.querySelector(`#faq-answer-${id}`).previousElementSibling.querySelector('i');
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        });
+    </script>
+</body>
+</html>
