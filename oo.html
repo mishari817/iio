@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoTek | حماية طلاء السيارات PPF في جدة</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap');
+
+        
+
+        :root {
+
+            --primary: #dc2626;
+
+            --secondary: #ea580c;
+
+            --dark: #1f2937;
+
+            --light: #f3f4f6;
+
+        }
+
+        
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        
+
+        body {
+
+            font-family: 'Tajawal', sans-serif;
+
+            scroll-behavior: smooth;
+
+            background-color: #f9fafb;
+
+            color: #1f2937;
+
+        }
+
+        
+
+        /* Mobile Contact Buttons */
+
+        .mobile-contact-btn {
+
+            display: none;
+
+            position: fixed;
+
+            bottom: 20px;
+
+            z-index: 100;
+
+            width: 60px;
+
+            height: 60px;
+
+            border-radius: 50%;
+
+            font-size: 24px;
+
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+            transition: all 0.3s;
+
+        }
+
+        
+
+        .mobile-contact-btn:hover {
+
+            transform: scale(1.1);
+
+        }
+
+        
+
+        .mobile-call-btn {
+
+            right: 20px;
+
+            background: var(--secondary);
+
+            color: white;
+
+        }
+
+        
+
+        .mobile-whatsapp-btn {
+
+            right: 90px;
+
+            background: #25D366;
+
+            color: white;
+
+        }
+
+        
+
+        @media (max-width: 768px) {
+
+            .mobile-contact-btn {
+
+                display: flex;
+
+                align-items: center;
+
+                justify-content: center;
+
+            }
+
+        }
+
+        
+
+        .hero-gradient {
+
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+
+        }
+
+        
+
+        .feature-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .faq-item {
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .faq-item:hover {
+
+            background-color: #fff7ed;
+
+        }
+
+        
+
+        .cta-pulse {
+
+            animation: pulse 2s infinite;
+
+        }
+
+        
+
+        .auto-text {
+
+            color: var(--primary);
+
+            font-weight: 900;
+
+        }
+
+        
+
+        .auto-text-red {
+
+            color: var(--primary);
+
+            font-weight: 700;
+
+        }
+
+        
+
+        .tek-text {
+
+            color: #000000;
+
+            font-weight: 700;
+
+        }
+
+        
+
+        .testimonial-card {
+
+            background: white;
+
+            border-radius: 12px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .testimonial-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+        }
+
+        
+
+        .gallery-item {
+
+            overflow: hidden;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        .gallery-item img {
+
+            transition: transform 0.5s ease;
+
+        }
+
+        
+
+        .gallery-item:hover img {
+
+            transform: scale(1.05);
+
+        }
+
+        
+
+        .service-card {
+
+            transition: all 0.3s ease;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+        }
+
+        
+
+        .service-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+        }
+
+        
+
+        @keyframes pulse {
+
+            0% {
+
+                box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+
+            }
+
+            70% {
+
+                box-shadow: 0 0 0 10px rgba(220, 38, 38, 0);
+
+            }
+
+            100% {
+
+                box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+
+            }
+
+        }
+
+        
+
+        .swiper {
+
+            width: 100%;
+
+            padding: 20px 0 40px;
+
+        }
+
+        
+
+        .swiper-pagination-bullet-active {
+
+            background: var(--primary) !important;
+
+        }
+
+        
+
+        .navbar {
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .navbar.scrolled {
+
+            background: rgba(255, 255, 255, 0.95);
+
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+            backdrop-filter: blur(10px);
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+
+    <nav class="navbar fixed top-0 w-full z-50">
+
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <div class="text-2xl font-bold"><span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span></div>
+
+            <div class="hidden md:flex space-x-6 space-x-reverse">
+
+                <a href="#why" class="hover:text-red-600 transition">لماذا PPF؟</a>
+
+                <a href="#services" class="hover:text-red-600 transition">خدماتنا</a>
+
+                <a href="#gallery" class="hover:text-red-600 transition">معرض الأعمال</a>
+
+                <a href="#benefits" class="hover:text-red-600 transition">المزايا</a>
+
+                <a href="#testimonials" class="hover:text-red-600 transition">آراء العملاء</a>
+
+                <a href="#faq" class="hover:text-red-600 transition">الأسئلة الشائعة</a>
+
+            </div>
+
+            <a href="tel:0504631317" class="bg-red-600 text-white px-4 py-2 rounded-full hover:bg-red-700 transition">
+
+                <i class="fas fa-phone ml-2"></i> 0504631317
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero-gradient text-white pt-32 pb-20">
+
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 mb-10 md:mb-0">
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">احمي سيارتك مع <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> – حماية تدوم ومظهر فاخر 🚘✨</h1>
+
+                <p class="text-xl mb-8">تركيب PPF – Paint Protection Film لحماية الطلاء من الخدوش والأتربة وأشعة الشمس.</p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+
+                    <a href="#offer" class="cta-pulse bg-white text-red-600 font-bold px-8 py-3 rounded-full text-center hover:bg-gray-100 transition">
+
+                        احصل على خصم 50% الآن
+
+                    </a>
+
+                    <a href="https://wa.me/966504631317" class="bg-green-500 text-white font-bold px-8 py-3 rounded-full text-center hover:bg-green-600 transition">
+
+                        <i class="fab fa-whatsapp ml-2"></i> تواصل معنا واتساب
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="md:w-1/2 flex justify-center">
+
+                <div class="bg-white/20 p-8 rounded-xl backdrop-blur-sm border border-white/30">
+
+                    <div class="text-center">
+
+                        <i class="fas fa-car text-6xl mb-4"></i>
+
+                        <h3 class="text-2xl font-bold mb-2">عرض خاص محدود</h3>
+
+                        <p class="text-xl mb-4">خصم 50% عند الحجز الآن</p>
+
+                        <div class="bg-red-700 text-white py-2 px-4 rounded-full inline-block">
+
+                            <i class="fas fa-clock mr-2"></i> العرض ينتهي خلال 3 أيام
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Services Section -->
+
+    <section id="services" class="py-16 bg-white">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-red-600">خدماتنا المتخصصة</h2>
+
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">نقدم مجموعة متكاملة من خدمات العناية بالسيارة لحماية مظهرها والحفاظ على قيمتها</p>
+
+            
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-shield-alt"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">حماية الطلاء PPF</h3>
+
+                    <p class="text-gray-600">فيلم حماية شفاف عالي الجودة يحمي طلاء سيارتك من الخدوش والحصى والعوامل الجوية.</p>
+
+                </div>
+
+                
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-tint-slash"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">عوازل حرارية</h3>
+
+                    <p class="text-gray-600">عوازل عالية الجودة تحجب الحرارة وتوفر الخصوصية وتحمي من الأشعة فوق البنفسجية.</p>
+
+                </div>
+
+                
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-spray-can"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">طلاء نانو سيراميك</h3>
+
+                    <p class="text-gray-600">طلاء متقدم يعزز لمعان السيارة ويوفر حماية طويلة الأمد ضد العوامل الخارجية.</p>
+
+                </div>
+
+                
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-tools"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">إصلاح كسور الزجاج</h3>
+
+                    <p class="text-gray-600">خدمة إصلاح كسور الزجاج الأمامي بدون الحاجة إلى الاستبدال الكامل، بتكلفة أقل.</p>
+
+                </div>
+
+                
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-soap"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">تلميع وتجهيز السيارات</h3>
+
+                    <p class="text-gray-600">خدمات تلميع متكاملة لإعادة اللمعان والجاذبية لسيارتك بمظهر وكأنها جديدة.</p>
+
+                </div>
+
+                
+
+                <div class="service-card bg-gray-50 p-6 rounded-xl shadow-md">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-cog"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">خدمات الصيانة الوقائية</h3>
+
+                    <p class="text-gray-600">برامج صيانة وقائية للحفاظ على مظهر سيارتك وأدائها لأطول فترة ممكنة.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Why PPF Section -->
+
+    <section id="why" class="py-16 bg-gray-50">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-red-600">أهمية PPF (Paint Protection Film)</h2>
+
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">فيلم حماية الطلاء هو استثمار ذكي يحافظ على قيمة سيارتك ويحميها من التلف اليومي</p>
+
+            
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-shield-alt"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">حماية من الخدوش والتآكل</h3>
+
+                    <p class="text-gray-600">يمنع الخدوش والتآكل الناتج عن الحصى والأتربة ويحافظ على مظهر السيارة كالجديدة.</p>
+
+                </div>
+
+                
+
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-sun"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">حماية من الأشعة فوق البنفسجية</h3>
+
+                    <p class="text-gray-600">يحمي الطلاء من التلف الناتج عن أشعة الشمس ويحافظ على لون السيارة الأصلي.</p>
+
+                </div>
+
+                
+
+                <div class="feature-card bg-white p-6 rounded-xl shadow-md transition">
+
+                    <div class="text-red-600 text-4xl mb-4">
+
+                        <i class="fas fa-chart-line"></i>
+
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">زيادة القيمة السوقية</h3>
+
+                    <p class="text-gray-600">يزيد من قيمة السيارة عند إعادة البيع بحفاظه على الطلاء الأصلي بحالة ممتازة.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Gallery Section -->
+
+    <section id="gallery" class="py-16 bg-white">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-red-600">معرض أعمالنا</h2>
+
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">أعمالنا تتحدث عنا، شاهد بعض النماذج من سيارات عملائنا التي قمنا بحمايتها</p>
+
+            
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1549399542-7e82138d0d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="سيارة بعد تركيب PPF" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">بي إم دبليو X5</h3>
+
+                        <p class="text-gray-600">تركيب حماية كاملة</p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="عازل حراري" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">مرسيدس S500</h3>
+
+                        <p class="text-gray-600">تركيب عازل حراري متطور</p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="نانو سيراميك" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">بورشيه 911</h3>
+
+                        <p class="text-gray-600">طلاء نانو سيراميك</p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="تلميع السيارات" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">أودي Q7</h3>
+
+                        <p class="text-gray-600">خدمة تلميع متكاملة</p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="إصلاح زجاج" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">تويوتا كامري</h3>
+
+                        <p class="text-gray-600">إصلاح كسر الزجاج الأمامي</p>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="gallery-item">
+
+                    <img src="https://images.unsplash.com/photo-1601268859287-9cec8a74e9f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="تفاصيل العمل" class="w-full h-64 object-cover">
+
+                    <div class="p-4 bg-white">
+
+                        <h3 class="font-bold">لكزس LX570</h3>
+
+                        <p class="text-gray-600">حماية PPF كاملة مع نانو سيراميك</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="text-center mt-12">
+
+                <a href="https://wa.me/966504631317?text=أرغب في رؤية المزيد من أعمالكم" class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition">
+
+                    <i class="fab fa-whatsapp ml-2"></i> أرسل لنا على واتساب للمزيد من الصور
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Benefits Section -->
+
+    <section id="benefits" class="py-16 bg-gray-50">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-red-600">مزايا PPF من <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span></h2>
+
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">نحن نستخدم أفضل المواد والتقنيات لضمان حماية مثالية لسيارتك</p>
+
+            
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">حماية طويلة الأمد</h3>
+
+                    <p class="text-gray-600">حماية السيارة لسنوات طويلة تصل إلى 10 سنوات.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">لمعان دائم</h3>
+
+                    <p class="text-gray-600">الحفاظ على لمعان الطلاء الأصلي للسيارة.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">مظهر غير مرئي</h3>
+
+                    <p class="text-gray-600">الفيلم شفاف تمامًا ولا يغير من مظهر السيارة.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">تركيب احترافي</h3>
+
+                    <p class="text-gray-600">فريق محترف بسنوات من الخبرة في التركيب.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">ضمان ممتد</h3>
+
+                    <p class="text-gray-600">ضمان يصل إلى 5 سنوات على المواد والتركيب.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">صيانة سهلة</h3>
+
+                    <p class="text-gray-600">سهل التنظيف والصيانة مثل الطلاء الأصلي.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">مقاومة كيميائية</h3>
+
+                    <p class="text-gray-600">مقاوم للعوامل الكيميائية والتنظيف القاسي.</p>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
+
+                    <h3 class="text-lg font-bold mb-2">حماية ذاتية</h3>
+
+                    <p class="text-gray-600">بعض الأفلام لها خاصية إصلاح الخدوش البسيطة تلقائيًا.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" class="py-16 bg-white">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-4 text-red-600">ماذا يقول عملاؤنا</h2>
+
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">ثقة عملائنا هي شهادتنا الحقيقية على جودة عملنا واهتمامنا بتفاصيل كل سيارة</p>
+
+            
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="testimonial-card p-6">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+
+                            <i class="fas fa-user"></i>
+
+                        </div>
+
+                        <div class="mr-3">
+
+                            <h4 class="font-bold">محمد السديس</h4>
+
+                            <p class="text-gray-500 text-sm">مالك تويوتا كامري</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-yellow-400 mb-3">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p class="text-gray-600">"خدمة ممتازة وجودة عالية في العمل. السيارة أصبحت أفضل من第一天. أنصح الجميع بالتعامل معهم."</p>
+
+                </div>
+
+                
+
+                <div class="testimonial-card p-6">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+
+                            <i class="fas fa-user"></i>
+
+                        </div>
+
+                        <div class="mr-3">
+
+                            <h4 class="font-bold">فهد الحربي</h4>
+
+                            <p class="text-gray-500 text-sm">مالك لكزس LX570</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-yellow-400 mb-3">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                    </div>
+
+                    <p class="text-gray-600">"فريق محترف جدًا واهتمام بالتفاصيل. السيارة أصبحت محمية من الخدوش والأتربة. شكرًا لكم على الجودة."</p>
+
+                </div>
+
+                
+
+                <div class="testimonial-card p-6">
+
+                    <div class="flex items-center mb-4">
+
+                        <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600">
+
+                            <i class="fas fa-user"></i>
+
+                        </div>
+
+                        <div class="mr-3">
+
+                            <h4 class="font-bold">خالد الفهد</h4>
+
+                            <p class="text-gray-500 text-sm">مالك مرسيدس G63</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="text-yellow-400 mb-3">
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+
+                    <p class="text-gray-600">"جودة العمل ممتازة والفيلم غير مرئي تمامًا. السيارة محمية والحمدلله. سأعتمد عليكم دائمًا لصيانة سيارتي."</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Offer Section -->
+
+    <section id="offer" class="py-16 bg-red-50">
+
+        <div class="container mx-auto px-4 text-center">
+
+            <h2 class="text-3xl font-bold mb-6 text-red-600">🔥 خصم 50% عند الحجز الآن!</h2>
+
+            <p class="text-xl mb-8">لا تفوت الفرصة لحماية سيارتك بأفضل سعر في جدة</p>
+
+            <a href="https://wa.me/966504631317" class="cta-pulse inline-block bg-red-600 text-white font-bold px-8 py-4 rounded-full hover:bg-red-700 transition">
+
+                احجز عرض الخصم 50% الآن
+
+            </a>
+
+            
+
+            <div class="mt-8 bg-white p-6 rounded-xl shadow-md inline-block">
+
+                <div class="flex items-center">
+
+                    <i class="fas fa-clock text-red-600 text-2xl ml-2"></i>
+
+                    <p class="text-lg">هذا العرض ساري لمدة 3 أيام فقط</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ Section -->
+
+    <section id="faq" class="py-16 bg-gray-50">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-12 text-red-600">الأسئلة الشائعة</h2>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+
+                <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(1)">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="text-xl font-bold">❓ ما هو PPF؟</h3>
+
+                        <i class="fas fa-chevron-down text-red-600"></i>
+
+                    </div>
+
+                    <div id="faq-answer-1" class="hidden mt-4 text-gray-600">
+
+                        PPF أو Paint Protection Film هو فيلم شفاف عالي الجودة مصمم خصيصًا لحماية طلاء السيارة من الخدوش والتآكل والعوامل الجوية مع الحفاظ على المظهر الأصلي للسيارة.
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(2)">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="text-xl font-bold">❓ كم يدوم حماية PPF؟</h3>
+
+                        <i class="fas fa-chevron-down text-red-600"></i>
+
+                    </div>
+
+                    <div id="faq-answer-2" class="hidden mt-4 text-gray-600">
+
+                        ضمان 5 سنوات على جميع الأفلام والخدمات. مع العناية المناسبة، يمكن أن تدوم الحماية حتى 10 سنوات.
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(3)">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="text-xl font-bold">❓ هل يؤثر PPF على مظهر السيارة؟</h3>
+
+                        <i class="fas fa-chevron-down text-red-600"></i>
+
+                    </div>
+
+                    <div id="faq-answer-3" class="hidden mt-4 text-gray-600">
+
+                        شفاف وغير مرئي تقريبًا. يحافظ على المظهر الأصلي للسيارة بل ويزيد من لمعان الطلاء في بعض الأحيان.
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(4)">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="text-xl font-bold">❓ كم من الوقت يستغرق التركيب؟</h3>
+
+                        <i class="fas fa-chevron-down text-red-600"></i>
+
+                    </div>
+
+                    <div id="faq-answer-4" class="hidden mt-4 text-gray-600">
+
+                        حسب نوع الخدمة والمساحة المطلوبة. تركيب PPF كامل للسيارة قد يستغرق من يوم إلى يومين، بينما الخدمات الأصغر قد تستغرق بضع ساعات فقط.
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="faq-item bg-white p-6 rounded-xl shadow-sm cursor-pointer" onclick="toggleFAQ(5)">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="text-xl font-bold">❓ لماذا أختار <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> لتركيب PPF؟</h3>
+
+                        <i class="fas fa-chevron-down text-red-600"></i>
+
+                    </div>
+
+                    <div id="faq-answer-5" class="hidden mt-4 text-gray-600">
+
+                        <ul class="list-disc pr-5 space-y-2">
+
+                            <li>منتجات أصلية وذات جودة عالمية</li>
+
+                            <li>فريق فني محترف وذو خبرة واسعة</li>
+
+                            <li>تركيب احترافي في جدة لجميع أنواع السيارات</li>
+
+                            <li>ضمان 5 سنوات وخدمة ما بعد البيع ممتازة</li>
+
+                            <li>خدمة عملاء مباشرة على الرقم 0504631317</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Location Section -->
+
+    <section class="py-16 bg-white">
+
+        <div class="container mx-auto px-4 text-center">
+
+            <h2 class="text-3xl font-bold mb-6 text-red-600">موقعنا في جدة</h2>
+
+            <p class="text-xl mb-4">جدة - حي السنابل - شارع فهد بن خرينق</p>
+
+            <p class="text-lg mb-8">نقدم أيضًا: عوازل حرارية | نانو سيراميك | إصلاح كسور الزجاج</p>
+
+            
+
+            <div class="max-w-4xl mx-auto bg-gray-100 p-4 rounded-xl">
+
+                <div class="aspect-w-16 aspect-h-9 bg-gray-300 rounded-lg flex items-center justify-center">
+
+                    <i class="fas fa-map-marker-alt text-4xl text-gray-500"></i>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="bg-red-50 p-4 rounded-xl">
+
+                    <i class="fas fa-clock text-red-600 text-2xl mb-2"></i>
+
+                    <h3 class="font-bold mb-1">أوقات العمل</h3>
+
+                    <p class="text-gray-600">السبت - الخميس: 9ص - 10م</p>
+
+                    <p class="text-gray-600">الجمعة: 4م - 10م</p>
+
+                </div>
+
+                
+
+                <div class="bg-red-50 p-4 rounded-xl">
+
+                    <i class="fas fa-phone text-red-600 text-2xl mb-2"></i>
+
+                    <h3 class="font-bold mb-1">اتصل بنا</h3>
+
+                    <p class="text-gray-600">0504631317</p>
+
+                    <p class="text-gray-600">info@autotek.com</p>
+
+                </div>
+
+                
+
+                <div class="bg-red-50 p-4 rounded-xl">
+
+                    <i class="fas fa-concierge-bell text-red-600 text-2xl mb-2"></i>
+
+                    <h3 class="font-bold mb-1">خدماتنا</h3>
+
+                    <p class="text-gray-600">حماية PPF</p>
+
+                    <p class="text-gray-600">عوازل حرارية</p>
+
+                    <p class="text-gray-600">نانو سيراميك</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-800 text-white py-12">
+
+        <div class="container mx-auto px-4">
+
+            <div class="flex flex-col items-center text-center">
+
+                <h3 class="text-4xl font-bold mb-4"><span class="auto-text">A</span><span class="auto-text-red">UTO</span><span class="tek-text">TEK</span></h3>
+
+                <p class="text-gray-300 text-xl mb-6">حماية طلاء السيارات PPF في جدة</p>
+
+                <div class="space-y-4">
+
+                    <div class="flex items-center justify-center">
+
+                        <i class="fas fa-phone text-red-500 mr-2"></i>
+
+                        <span class="text-lg">0504631317</span>
+
+                    </div>
+
+                    <div class="flex items-center justify-center">
+
+                        <i class="fab fa-whatsapp text-green-400 mr-2"></i>
+
+                        <a href="https://wa.me/966504631317" class="hover:underline text-lg">0504631317</a>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="flex space-x-4 space-x-reverse mt-6">
+
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition">
+
+                        <i class="fab fa-twitter"></i>
+
+                    </a>
+
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-red-600 transition">
+
+                        <i class="fab fa-snapchat-ghost"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+
+                <p>© 2023 <span class="auto-text">A</span><span class="auto-text-red">uto</span><span class="tek-text">tek</span> لتركيب PPF. جميع الحقوق محفوظة.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Mobile Contact Buttons -->
+
+    <a href="tel:0504631317" class="mobile-contact-btn mobile-call-btn">
+
+        <i class="fas fa-phone"></i>
+
+    </a>
+
+    <a href="https://wa.me/966504631317" class="mobile-contact-btn mobile-whatsapp-btn">
+
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+
+
+    <script>
+
+        // Toggle FAQ answers
+
+        function toggleFAQ(id) {
+
+            const answer = document.getElementById(`faq-answer-${id}`);
+
+            const icon = document.querySelector(`#faq-answer-${id}`).previousElementSibling.querySelector('i');
+
+            
+
+            if (answer.classList.contains('hidden')) {
+
+                answer.classList.remove('hidden');
+
+                icon.classList.remove('fa-chevron-down');
+
+                icon.classList.add('fa-chevron-up');
+
+            } else {
+
+                answer.classList.add('hidden');
+
+                icon.classList.remove('fa-chevron-up');
+
+                icon.classList.add('fa-chevron-down');
+
+            }
+
+        }
+
+        
+
+        // Smooth scrolling for anchor links
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+            anchor.addEventListener('click', function (e) {
+
+                e.preventDefault();
+
+                
+
+                const targetId = this.getAttribute('href');
+
+                if (targetId === '#') return;
+
+                
+
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+
+                    targetElement.scrollIntoView({
+
+                        behavior: 'smooth'
+
+                    });
+
+                }
+
+            });
+
+        });
+
+        
+
+        // Navbar scroll effect
+
+        window.addEventListener('scroll', function() {
+
+            const navbar = document.querySelector('.navbar');
+
+            if (window.scrollY > 50) {
+
+                navbar.classList.add('scrolled');
+
+            } else {
+
+                navbar.classList.remove('scrolled');
+
+            }
+
+        });
+
+        
+
+        // Initialize testimonials slider
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // This would initialize a Swiper slider if we had one
+
+            console.log('Website loaded successfully');
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
